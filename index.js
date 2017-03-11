@@ -6,7 +6,7 @@ const config = require('./config');
 // connect to the database and load models
 require('./server/models').connect(config.dbUri);
 
-const app = express();
+const app = express(); 
 // tell the app to look for static files in these directories
 app.use(express.static('./server/static/'));
 app.use(express.static('./client/dist/'));
